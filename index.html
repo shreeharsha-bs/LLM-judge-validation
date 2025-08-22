@@ -1630,23 +1630,31 @@
 
                     <div class="space-y-2 mt-6">
                         <label class="block text-gray-700 font-semibold mb-2">Do you agree with the LLM's score?</label>
-                        <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+                        <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                             <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
-                                <input type="radio" name="validation-${index}" value="Agree" class="form-radio text-green-600 h-4 w-4">
-                                <span class="ml-2 text-gray-700">Agree</span>
+                                <input type="radio" name="validation-${index}" value="Strongly Agree" class="form-radio text-green-700 h-4 w-4">
+                                <span class="ml-2 text-gray-700 text-sm">Strongly Agree</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
+                                <input type="radio" name="validation-${index}" value="Somewhat Agree" class="form-radio text-green-500 h-4 w-4">
+                                <span class="ml-2 text-gray-700 text-sm">Somewhat Agree</span>
                             </label>
                             <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
                                 <input type="radio" name="validation-${index}" value="Neutral" class="form-radio text-yellow-600 h-4 w-4">
-                                <span class="ml-2 text-gray-700">Neutral</span>
+                                <span class="ml-2 text-gray-700 text-sm">Neutral</span>
                             </label>
                             <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
-                                <input type="radio" name="validation-${index}" value="Disagree" class="form-radio text-red-600 h-4 w-4">
-                                <span class="ml-2 text-gray-700">Disagree</span>
+                                <input type="radio" name="validation-${index}" value="Somewhat Disagree" class="form-radio text-red-500 h-4 w-4">
+                                <span class="ml-2 text-gray-700 text-sm">Somewhat Disagree</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
+                                <input type="radio" name="validation-${index}" value="Strongly Disagree" class="form-radio text-red-700 h-4 w-4">
+                                <span class="ml-2 text-gray-700 text-sm">Strongly Disagree</span>
                             </label>
                         </div>
                         <div class="mt-4">
                             <label class="block text-gray-700 font-semibold mb-2">Notes (optional):</label>
-                            <textarea name="notes-${index}" rows="2" class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Provide a brief explanation for Neutral or Disagree ratings..."></textarea>
+                            <textarea name="notes-${index}" rows="2" class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Provide a brief explanation for your rating..."></textarea>
                         </div>
                     </div>
                 `;
